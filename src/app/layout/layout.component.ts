@@ -35,6 +35,7 @@ export class LayoutComponent implements OnInit {
   }
 
   ngOnInit(){
+    this.cagada += "Pero si me estoy ejecutando";
     this.fetchTexts().then( () =>
       this.fetchSound()
     ).then( () => {
