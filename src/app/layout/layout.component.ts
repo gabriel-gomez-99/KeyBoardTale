@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LayoutComponent implements OnInit {
 
+
+  cagada = "No estan los archivos la concha de la lora";
   texts: string[][] = [[],[]]; // textos divididos en substrings
   currentText: number = 0; // texto al que pertenece el subtring que se esta mostrando
   currentSub: number = 0; // substring que se muestra en pantalla
@@ -43,6 +45,7 @@ export class LayoutComponent implements OnInit {
       document.addEventListener( 'keydown', (event) => {
         this.processInput(event.key);
       });
+      this.cagada = "Si estan los archivos";
     }
     );
   }
